@@ -61,9 +61,10 @@ const TechStackCard = () => {
             {techs.map((tech) => (
               <span
                 key={tech}
-                className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-[14px] font-medium text-gray-700 dark:text-gray-300"
+                className="relative px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-[14px] font-medium text-gray-700 dark:text-gray-300 overflow-hidden cursor-default transition-colors hover:bg-gray-200 dark:hover:bg-gray-600 group"
               >
-                {tech}
+                <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-500 ease-in-out bg-gradient-to-r from-transparent via-white/40 dark:via-white/20 to-transparent" />
+                <span className="relative">{tech}</span>
               </span>
             ))}
           </div>
