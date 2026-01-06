@@ -36,10 +36,10 @@ const ExperienceCard = () => {
           <div key={index} className="flex items-start gap-3">
             <div className={`w-2 h-2 rounded-full mt-2 flex-shrink-0 ${exp.current ? 'bg-green-500' : 'bg-gray-400'}`} />
             <div className="flex-1">
-              <h3 className="font-semibold text-gray-900 dark:text-gray-100">
+              <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-100">
                 {exp.title}
               </h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
+              <p className="text-[14px] text-gray-600 dark:text-gray-400">
                 {exp.company} • {exp.year}
               </p>
             </div>

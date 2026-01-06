@@ -20,7 +20,7 @@ const Card = ({ title, icon, iconBg, children, className = "" }: CardProps) => {
             {icon}
           </div>
         )}
-        <h2 className="text-xl font-bold">{title}</h2>
+        <h2 className="text-lg font-bold">{title}</h2>
       </div>
       {children}
     </div>
