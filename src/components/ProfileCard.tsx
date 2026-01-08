@@ -10,7 +10,7 @@ const ProfileCard = () => {
     <div className="flex flex-col md:flex-row gap-8 items-start mb-8">
       {/* Profile Image */}
       <div
-        className="relative w-48 h-48 rounded-3xl overflow-hidden flex-shrink-0 bg-gray-200 dark:bg-gray-700"
+        className="relative w-48 h-48 rounded-3xl overflow-hidden flex-shrink-0 bg-gray-200 dark:bg-gray-700 cursor-pointer group"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -18,7 +18,7 @@ const ProfileCard = () => {
           src={isHovered ? "/allen-hover.png" : "/allen.png"}
           alt="Profile"
           fill
-          className="object-cover transition-opacity duration-300"
+          className="object-cover transition-all duration-500 ease-in-out group-hover:scale-110"
         />
       </div>
 
