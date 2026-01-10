@@ -10,7 +10,7 @@ import CertificationsCard from "@/src/components/CertificationsCard";
 
 const HomeView = () => {
   return (
-    <section className="max-w-[1200px] mx-auto px-6 py-12">
+    <section className="max-w-[1100px] mx-auto px-6 py-12">
       {/* Profile Section - Standalone at top */}
       <ProfileCard />
 
