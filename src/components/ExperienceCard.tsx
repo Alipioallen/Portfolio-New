@@ -43,15 +43,15 @@ const ExperienceCard = () => {
                 className={`w-3 h-3 rounded-full mt-1.5 transition-colors duration-200 border-2 ${
                   exp.current
                     ? 'bg-green-500 border-green-500'
-                    : 'bg-white dark:bg-gray-800 border-gray-400 group-hover:bg-green-500 group-hover:border-green-500'
+                    : 'bg-gray-100 dark:bg-gray-800 border-gray-400 group-hover:bg-green-500 group-hover:border-green-500'
                 }`}
               />
             </div>
             <div className="flex-1 pb-2">
-              <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-100">
+              <h3 className="font-semibold text-lg text-black dark:text-gray-100">
                 {exp.title}
               </h3>
-              <p className="text-[14px] text-gray-600 dark:text-gray-400">
+              <p className="text-[14px] text-black dark:text-gray-400">
                 {exp.company} • {exp.year}
               </p>
             </div>

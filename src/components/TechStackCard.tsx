@@ -60,14 +60,14 @@ const TechStackCard = () => {
     >
       {Object.entries(techStacks).map(([category, techs]) => (
         <div key={category} className="mb-4 last:mb-0">
-          <h3 className="font-semibold text-lg text-gray-700 dark:text-gray-300 mb-2">
+          <h3 className="font-semibold text-lg text-black dark:text-gray-300 mb-2">
             {category}
           </h3>
           <div className="flex flex-wrap gap-2">
             {techs.map((tech) => (
               <span
                 key={tech}
-                className="relative px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-[14px] font-medium text-gray-700 dark:text-gray-300 overflow-hidden cursor-default transition-colors hover:bg-gray-200 dark:hover:bg-gray-600 group"
+                className="relative px-3 py-1 rounded-full bg-gray-200 dark:bg-gray-700 text-[14px] font-medium text-black dark:text-gray-300 overflow-hidden cursor-default transition-colors hover:bg-gray-300 dark:hover:bg-gray-600 group"
               >
                 <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-500 ease-in-out bg-gradient-to-r from-transparent via-white/40 dark:via-white/20 to-transparent" />
                 <span className="relative">{tech}</span>

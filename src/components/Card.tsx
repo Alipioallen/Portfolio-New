@@ -12,7 +12,7 @@ interface CardProps {
 const Card = ({ title, icon, iconBg, children, className = "" }: CardProps) => {
   return (
     <div
-      className={`bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-all duration-300 ${className}`}
+      className={`bg-gray-100 dark:bg-gray-800 rounded-2xl p-6 border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-all duration-300 ${className}`}
     >
       <div className="flex items-center gap-3 mb-4">
         {icon && (
@@ -20,7 +20,7 @@ const Card = ({ title, icon, iconBg, children, className = "" }: CardProps) => {
             {icon}
           </div>
         )}
-        <h2 className="text-lg font-bold">{title}</h2>
+        <h2 className="text-lg font-bold text-black dark:text-white">{title}</h2>
       </div>
       {children}
     </div>

@@ -1,16 +1,25 @@
 @import "tailwindcss";
 
-:root {
+@custom-variant dark (&:where(.dark, .dark *));
 
+:root {
   --black: #000000;
   --red: #FE1F4B;
   --white: #ffffff;
-
 
   /* Opacity variations */
   --black-5: rgba(0, 0, 0, 0.05);
   --black-50: rgba(0, 0, 0, 0.5);
   --white-20: rgba(255, 255, 255, 0.2);
+
+  /* Light mode */
+  --background: #E2DFD2;
+  --foreground: #000000;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 @theme inline {
@@ -22,13 +31,6 @@
   --color-black-5: var(--black-5);
   --color-black-50: var(--black-50);
   --color-white-20: var(--white-20);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
