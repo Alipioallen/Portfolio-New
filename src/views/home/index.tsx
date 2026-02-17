@@ -6,7 +6,6 @@ import TechStackCard from "@/src/components/TechStackCard";
 import SocialLinksCard from "@/src/components/SocialLinksCard";
 import ExperienceCard from "@/src/components/ExperienceCard";
 import ProjectsCard from "@/src/components/ProjectsCard";
-import CertificationsCard from "@/src/components/CertificationsCard";
 
 const HomeView = () => {
   return (
@@ -20,15 +19,18 @@ const HomeView = () => {
         <div className="space-y-6">
           <AboutCard />
           <TechStackCard />
-          <SocialLinksCard />
         </div>
 
         {/* Right Column */}
         <div className="space-y-6">
           <ExperienceCard />
           <ProjectsCard />
-          <CertificationsCard />
         </div>
+      </div>
+
+      {/* Social Links - Full Width */}
+      <div className="mt-6">
+        <SocialLinksCard />
       </div>
     </section>
   );
