@@ -16,13 +16,13 @@ const HomeView = () => {
       {/* Masonry Grid Layout - Cards only */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8">
         {/* Left Column */}
-        <div className="space-y-6">
+        <div className="flex flex-col gap-6">
           <AboutCard />
           <TechStackCard />
         </div>
 
         {/* Right Column */}
-        <div className="space-y-6">
+        <div className="flex flex-col gap-6">
           <ExperienceCard />
           <ProjectsCard />
         </div>
