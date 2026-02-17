@@ -8,11 +8,11 @@ const ExperienceCard = () => {
     {
       title: "Web Developer",
       company: "Fullstack HQ",
-      year: "February 2024 – 2026",
+      year: "February 2024 – Present",
       current: true,
     },
     {
-      title: "Web Developer (Training)",
+      title: "Junior Web Developer",
       company: "My Creative Panda INC.",
       year: "October 2023 – December 2023",
       current: false,

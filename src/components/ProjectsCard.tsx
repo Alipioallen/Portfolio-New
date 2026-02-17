@@ -17,17 +17,17 @@ const ProjectsCard = () => {
       url: "https://github.com/dznice/WAHIE-COOP",
     },
     {
-      title: "Chunk Nibbles",
-      description: "Online store for premium snack products",
+      title: "Chunk Nibbles (SHOPIFY)",
+      description: "Online store for premium snack products ",
       url: "https://chunknibbles.com",
     },
     {
-      title: "Radical",
+      title: "Radical (Next.js)",
       description: "Multimedia site for artists and studios",
       url: "http://radicalmusic.netlify.app/",
     },
     {
-      title: "Clohane",
+      title: "Clohane (Wordpress)",
       description: "Site for beautiful Interiors",
       url: "https://clohane.ie",
     },
